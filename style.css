@@ -94,13 +94,39 @@ a:hover {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 .b-parallax {
     background-attachment: fixed;
 }
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
+}
+/***MODIFICATIONS**/
+ h2 {
+    font: bold 20px  "helvetica", Tahoma, sans-serif;
+    color: #000000;
+}
+.voffset .text-h2 {
+    font: bold 20px  "helvetica", Tahoma, sans-serif;
+    font-style: italic; 
+    color: #424141;
+}
+h4 {
+    font: bold 15px  "helvetica", Tahoma, sans-serif;
+    color: #000000;
+}
+.row .h2-text{
+    font-family: "helvetica";
+    color: #868484;
+    
+}
+.col-sm-3:hover{
+    color: #FFF;
+}
+
+.col-sm-4  li{
+    color: #fff;
 }
 
 .d-bloc button:hover {
@@ -640,7 +666,6 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
