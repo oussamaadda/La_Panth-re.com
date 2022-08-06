@@ -105,16 +105,19 @@ a:hover {
 /***MODIFICATIONS**/
  h2 {
     font: bold 20px  "helvetica", Tahoma, sans-serif;
-    color: #000000;
+    color: #5e5c5c;
 }
 .voffset .text-h2 {
     font: bold 20px  "helvetica", Tahoma, sans-serif;
     font-style: italic; 
-    color: #424141;
+    color: #5e5c5c;
 }
 h4 {
     font: bold 15px  "helvetica", Tahoma, sans-serif;
     color: #000000;
+}
+h5{
+    font-size: 25px;
 }
 .row .h2-text{
     font-family: "helvetica";
