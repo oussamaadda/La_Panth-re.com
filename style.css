@@ -763,7 +763,9 @@ h1 {
 h4 {
     color: #333333!important;
 }
-
+.row h5{
+    color: #FFFF!important;
+}
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -807,6 +809,8 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #2E405B;
 }
+
+
 
 .tc-white {
     color: #Ffff!important;
