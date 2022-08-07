@@ -800,6 +800,9 @@ h4 {
     background-color: #FFFFFF;
 }
 
+.bgc-dark-slate-blue {
+    background-color: #2E405B;
+}
 
 .bgc-atomic-tangerine {
     background-color: #2E405B;
@@ -828,11 +831,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #2E405B!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #2E405B!important;
 }
 
 .icon-dark-slate-blue {
@@ -844,9 +847,6 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
