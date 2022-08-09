@@ -11,8 +11,28 @@
 <link rel=stylesheet type=text/css href=style.css>
 <link rel=stylesheet type=text/css href=./css/font-awesome.css>
 <link rel=stylesheet type=text/css href=./css/et-line.css>
-<script src=./js/jquery-2.1.0.js></script>
-<script src=./js/bootstrap.js></script>
+<script async src=./js/jquery-2.1.0.js></script>
+<script async src=./js/bootstrap.js></script>
+<script async src=./js/blocs.js></script>
+<script async src=./js/jqBootstrapValidation.js></script>
+<script async src=./js/formHandler.js></script>
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+<FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+<FilesMatch "\.(js)$">
+Header set Cache-Control "max-age=2592000, private"
+</FilesMatch>
+<filesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Enleve le cache pour les ressources dynamiques
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
 <title>La Panthère Agence de web design</title>
 </head>
 <body>
@@ -21,7 +41,7 @@
 <div class="container bloc-sm">
 <nav class="navbar row">
 <div class=navbar-header>
-<a class=navbar-brand href=index.html><img src=./image_zip/agence-la-panthere-monochrome.svg alt="logo entreprise La Panthère Agence web design" style="width:200px"/></a>
+<a class=navbar-brand href=index.html><img src="./image_zip/agence-la-panthere-monochrome.svg" alt="logo entreprise La Panthère Agence web design" style="width:200px"/></a>
 <button id=nav-toggle type=button class="ui-navbar-toggle navbar-toggle" data-toggle=collapse data-target=.navbar-1>
 <span class=sr-only>Toggle navigation</span><span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span>
 </button>
@@ -129,7 +149,7 @@ Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises local
 </div>
 <div class="row tight-width-whitespace portfolio-row">
 <div class=col-sm-6>
-<a href=# data-lightbox=./image_zip/1.webp data-gallery-id=gallery-1 data-caption="Refonte d'un site web pour un journal " data-frame=snapshot-lb><img src=./image_zip/1.jpg class="img-responsive portfolio-thumb" alt="Refonte d'un site web pour un journal local"/></a>
+<a href=# data-lightbox="./image_zip/1.jpg" data-gallery-id=gallery-1 data-caption="Refonte d'un site web pour un journal " data-frame=snapshot-lb><img src="./image_zip/1.jpg" class="img-responsive portfolio-thumb" alt="Refonte d'un site web pour un journal local"/></a>
 <h4 class="mg-md text-center">
 <strong>REFONTE D'UN SITE WEB POUR UN JOURNAL LOCAL</strong>
 </h4>
@@ -138,7 +158,7 @@ Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
 </p>
 </div>
 <div class=col-sm-6>
-<a href=# data-lightbox=img/2.jpg data-gallery-id=gallery-1 data-caption="Création d'un site web pour photographes" data-frame=snapshot-lb><img src="./image_zip/2 (1).jpg" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour photographes" /></a>
+<a href=# data-lightbox="./image_zip/2 (1).jpg" data-gallery-id=gallery-1 data-caption="Création d'un site web pour photographes" data-frame=snapshot-lb><img src="./image_zip/2 (1).jpg" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour photographes" /></a>
 <h4 class="mg-md text-center">
 <strong>CREATION D'UN SITE WEB POUR PHOTOGRAPHES</strong>
 </h4>
@@ -149,7 +169,7 @@ Nous avons conçu la plateforme idéale pour laisser place aux clichés des phot
 </div>
 <div class="row tight-width-whitespace portfolio-row">
 <div class=col-sm-6>
-<a href=# data-lightbox=./image_zip/3.jpeg data-gallery-id=gallery-1 data-caption="Création d'un site internet pour un voyageur" data-frame=snapshot-lb><img src=./image_zip/3.bmp class="img-responsive portfolio-thumb" alt=" Création d'un site web pour voyageur"/></a>
+<a href=# data-lightbox="./image_zip/3.bmp" data-gallery-id=gallery-1 data-caption="Création d'un site internet pour un voyageur" data-frame=snapshot-lb><img src="./image_zip/3.bmp" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour voyageur"/></a>
 <h4 class="mg-md text-center">
 <strong>CREATION D'UN SITE INTERNET POUR VOYAGEUR</strong>
 </h4>
@@ -158,7 +178,7 @@ Nous avons élaboré un site internet et des illustrations pour sublimer les vid
 </p>
 </div>
 <div class=col-sm-6>
-<a href=# data-lightbox=./image_zip/4.jpeg data-gallery-id=gallery-1 data-caption="Conception d'un site pour une agence de mariage" data-frame=snapshot-lb><img src=./image_zip/4.bmp class="img-responsive portfolio-thumb" alt=" Création d'un site web pour agence de mariage" /></a>
+<a href=# data-lightbox="./image_zip/4.bmp"  data-gallery-id=gallery-1 data-caption="Conception d'un site pour une agence de mariage" data-frame=snapshot-lb><img src="./image_zip/4.bmp" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour agence de mariage" /></a>
 <h4 class="mg-md text-center">
 <strong>CONCEPTION D'UN SITE POUR UNE AGENCE DE MARIAGES</strong>
 </h4>

@@ -11,11 +11,28 @@
 <link rel=stylesheet type=text/css href=style.css>
 <link rel=stylesheet type=text/css href=./css/font-awesome.css>
 <link rel=stylesheet type=text/css href=./css/et-line.css>
-<script src=./js/jquery-2.1.0.js></script>
-<script src=./js/bootstrap.js></script>
-<script src=./js/blocs.js></script>
-<script src=./js/jqBootstrapValidation.js></script>
-<script src=./js/formHandler.js></script>
+<script async src=./js/jquery-2.1.0.js></script>
+<script async src=./js/bootstrap.js></script>
+<script async src=./js/blocs.js></script>
+<script async src=./js/jqBootstrapValidation.js></script>
+<script async src=./js/formHandler.js></script>
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+<FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+<FilesMatch "\.(js)$">
+Header set Cache-Control "max-age=2592000, private"
+</FilesMatch>
+<filesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Enleve le cache pour les ressources dynamiques
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
 <title>page2</title>
 </head>
 <body>
