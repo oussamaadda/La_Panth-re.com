@@ -13,6 +13,9 @@
 <link rel=stylesheet type=text/css href=./css/et-line.css>
 <script defer src=./js/jquery-2.1.0.js></script>
 <script defer src=./js/bootstrap.js></script>
+<script src="./js/blocs.js"></script>
+<script src="./js/jquery.touchSwipe.js" defer></script>
+<script src="./js/gmaps.js"></script>
 <title>page2</title>
 </head>
 <body>
@@ -21,7 +24,7 @@
 <div class="container bloc-sm">
 <nav class="navbar row">
 <div class=navbar-header>
-<a class=navbar-brand href=index.html><img src=img/agence-la-panthere-monochrome.svg alt="logo entreprise La Panthère" height=40 /></a>
+<a class=navbar-brand href=index.html><img src=img/agence-la-panthere-monochrome.svg alt="logo agence web La Panthère" height=40 /></a>
 <button id=nav-toggle type=button class="ui-navbar-toggle navbar-toggle" data-toggle=collapse data-target=.navbar-1>
 <span class=sr-only>Toggle navigation</span><span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span>
 </button>
@@ -60,7 +63,7 @@ Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 <div class="container bloc-lg">
 <div class=row>
 <div class=col-sm-6>
-<form id=form_1 novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+<form id=form_1  success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 <div class=form-group>
 <label>
 Nom
