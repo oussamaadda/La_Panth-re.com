@@ -953,10 +953,7 @@ h4 {
         overflow-x: hidden;
     }
 
-    .bloc {
-        padding-right: constant(safe-area-inset-right);
-        padding-left: constant(safe-area-inset-left);
-    }
+    
 
     .bloc-group,
     .bloc-group .bloc {
@@ -967,8 +964,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-right: constant(safe-area-inset-right);
-        padding-left: constant(safe-area-inset-left);
     }
 }
 
